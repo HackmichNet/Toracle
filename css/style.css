@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    align-items: stretch;
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+textarea {
+    width: 80%;
+    height: 50%;
+}
+body.dark-theme textarea {
+    background-color: black;
+    color: white;
+}
+.analyze-button {
+    margin-top: 20px;
+}
+footer {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+}
+body.dark-theme footer {
+    background-color: #343a40;
+    color: white;
+}
+header {
+    width: 100%;
+}
+.content {
+    overflow: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 20px;
+}

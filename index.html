@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand ms-3" href="#">Toracle</a>
+            <a class="navbar-brand ms-3 my-2 my-sm-0" href="https://hackmich.net/#impressum" target="_blank">Impressum</a>
+            <!--<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" id="theme-button">Toggle Theme</button>-->
+        </nav>
+    </header>
+    <div class="content position-relative">
+        <textarea id="input-area" placeholder="Never give your token to an unknown websites. So everything is done in your browser with JavaScript. Add your token here..." class="position-relative top-0"></textarea>
+        <div class="button-group position-relative top-0">
+            <button class="btn btn-primary analyze-button" type="button" onclick="analyze()">Analyze</button>
+            <button class="btn btn-secondary analyze-button" type="button" onclick="goBack()">Back</button>
+        </div>
+        <div id="token-details" class="position-relative top-0 m-3 text-danger"></div>
+        <div id="usage-table" class="position-relative top-0 mt-5 d-none">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Link</th>
+                    <th scope="col">Command</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <footer>
+        <p>Created by <a href="https://twitter.com/HackmichNet">@HackmichNet</a></p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
